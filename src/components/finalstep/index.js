@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import RingLoader from "react-spinners/RingLoader";
+import Button from '@material-ui/core/Button';
 import { css } from "@emotion/core";
 
 const override = css`
@@ -18,9 +19,11 @@ class Finalstep extends Component {
       loading:false
     };
   }
+
   componentDidMount() {
     console.log(this.state);
   }
+
   render() {
     return (
       <div style={{display: 'flex',flexDirection: 'column',alignItems: 'center',justifyContent: 'space-between'}}>
@@ -56,19 +59,21 @@ class Finalstep extends Component {
               <h3 style={{textAlign: 'right'}}>عدد المنتجات المتطابقة</h3>
             </div>
 
-            <div style={{display: 'flex',flexDirection: 'row',justifyContent: 'space-between',alignItems: 'center',width: '90%'}}>
+            {/* <div style={{display: 'flex',flexDirection: 'row',justifyContent: 'space-between',alignItems: 'center',width: '90%'}}>
               <h3 style={{textAlign: 'right'}}>{this.state.wrong_prices.length}</h3>
               <h3 style={{textAlign: 'right'}}>عدد المنتجات المختلفة أسعارها</h3>
-            </div>
+            </div> */}
 
             <div style={{display: 'flex',flexDirection: 'row',justifyContent: 'space-between',alignItems: 'center',width: '90%'}}>
               <h3 style={{textAlign: 'right'}}>{this.state.ignore_prices.length}</h3>
             <h3 style={{textAlign: 'right'}}>عدد المنتجات بدون قرار</h3>
             </div>
 
-            {/* <div style={{display: 'flex',alignItems: 'center',width: '90%',marginTop: 20,justifyContent: 'center'}}>
-              <Button variant="contained" color="primary" onClick={() => this.goToCards('/cards')} style={{height: 50,padding: 0,width: '100%',fontWeight: 'bold',fontSize: 15}}>ابدأ تصفح المنتجات</Button>
-            </div> */}
+            <div style={{display: 'flex',alignItems: 'center',width: '90%',marginTop: 40,justifyContent: 'center'}}>
+              <Button variant="contained" color="primary"
+                // onClick={() => this.goToCards('/cards')}
+                 style={{height: 50,padding: 0,width: '100%',fontWeight: 'bold',fontSize: 15}}>اعتماد الاختيارات</Button>
+            </div>
           </React.Fragment>
         }
 
