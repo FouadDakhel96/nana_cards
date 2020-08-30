@@ -280,6 +280,9 @@ class Home extends Component {
     })
   }
   componentDidMount() {
+    //TODO: call api found_in_products_not_in_sotre_products where reviewed = false
+    // make cron job in backend to send the cards link to pos-seller (Main Contact Mobile) with seller-hash
+    // params seller-hash, store_id(readable-id) --> check if the seller has this store ==> return store-hash
     this.calculateCount(this.state.products)
   }
 
