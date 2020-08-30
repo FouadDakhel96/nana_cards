@@ -1,0 +1,17 @@
+.nav-bar{
+  background-color: #C6EC9A !important;
+}
+.navbar-dark{
+  background-color: #1E7F49 !important;
+  color: white !important;
+}
+input.nav-bar-test::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #1E7F49;
+  opacity: 1; /* Firefox */
+}
+.main-font-dark-color{
+  color:#1E7F49 !important;
+}
+.main-font-light-color{
+  color:#C6EC9A !important;
+}
